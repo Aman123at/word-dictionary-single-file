@@ -224,7 +224,8 @@ func main() {
 	}
 
 	startTime := time.Now()
-	definition, err := lookupWord("waterfall")
+	// definition, err := lookupWord("waterfall")
+	definition, err := lookupWordFast("waterfall")
 	if err != nil {
 		fmt.Printf("Error looking up '%s': %v\n", "waterfall", err)
 	} else {
